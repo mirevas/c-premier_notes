@@ -21,3 +21,10 @@ argv1
 argv2
 
 ```
+
+2023/1/10
+1. MakeFile Commands
+* -Wall enable all warnings
+* -o output a new file with customized name.
+* -g debug
+* Refer to http://www.cs.cmu.edu/~cburch/211-sp96/gnu_devel/gpp.html
