@@ -60,3 +60,9 @@ eg.2 const int * pvalue = &value;
 */
 eg.3 const int * const pvalue = &value;		
 ```
+
+2-5
+1. alias: using, auto, decltype
+- using std::cout; // using namespace std;
+- auto: 自动选取正确的type。建议：能看出来的直接写type名。
+- decltype： eg. int i = 1; decltype(i) j = 2; 		// j的类型等同于i
