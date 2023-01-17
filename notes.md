@@ -66,3 +66,13 @@ eg.3 const int * const pvalue = &value;
 - using std::cout; // using namespace std;
 - auto: 自动选取正确的type。建议：能看出来的直接写type名。
 - decltype： eg. int i = 1; decltype(i) j = 2; 		// j的类型等同于i
+
+2023/1/16 3-1
+1. namespace(::)
+- 避免naming conflict
+- 不在头文件中使用using
+
+3-2
+1. string初始化， eg. string s = "hello world"; string s1("hello word"); string s3 = (10, 'x');
+2. string的function，eg. size(返回值的类型为size_t: unsigned integer)
+3. getline(std::cin, input);
