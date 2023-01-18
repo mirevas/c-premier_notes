@@ -76,3 +76,25 @@ eg.3 const int * const pvalue = &value;
 1. string初始化， eg. string s = "hello world"; string s1("hello word"); string s3 = (10, 'x');
 2. string的function，eg. size(返回值的类型为size_t: unsigned integer)
 3. getline(std::cin, input);
+
+2023/1/17 vector 3-3
+1. 直接赋值：vector<string> vec_str = {"123", "234", "345"};  
+	拷贝：vector<string> vec_str{"123", "234", "345"};  
+2. vector越界时，不一定会报错，可能为垃圾值。  
+3. push_back()与emplace_back():
+	eg. vec_str.push_back("x");  
+	**emplace_back()** (未详讲)  
+4. 判断相等 “==”：**?**  
+	eg. vector<string> vec_str = {"123", "456", "567"};  
+	vector<string> vec_str2{"123", "456", "567"};  
+	vec_str == vec_str2 // 1: 相等 （若不等，返回0）；先判断长度是否相等，若相等再判断每个element是否相等
+
+3-4 迭代器
+1. auto -> vector<int>::iterator  
+auto -> vector<int>::const_iterator
+2. vec.begin()  
+vec.end()	// one element pass the last element
+3. (*it).size() 相当于 it->size()
+4. vector和array的区别
+
+	
