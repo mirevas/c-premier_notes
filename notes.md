@@ -106,3 +106,11 @@ vec.end()	// one element pass the last element
 1. 不要在同一个表达式中同时改变值并且引用他， 
 	eg. *beg = touper(*beg++);  //avoid: 不知道++和函数哪个先执行  
 	->  *beg = touper(*beg); beg++;	//correct
+
+2023/1/23 5-1
+1. null statement
+2. mismatch -> if, for, while 加括号
+3. if else 嵌套问题，加括号；（python 对齐）
+	
+5-2
+1. try catch，<stdexcept>库
