@@ -114,3 +114,7 @@ vec.end()	// one element pass the last element
 	
 5-2
 1. try catch，<stdexcept>库
+	
+2023/1/24 6-1
+1. 全局变量 & static变量的区别：全局变量包括外部变量和static变量 **?**   
+https://www.runoob.com/w3cnote/cpp-static-usage.html
