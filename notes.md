@@ -118,3 +118,10 @@ vec.end()	// one element pass the last element
 2023/1/24 6-1
 1. 全局变量 & static变量的区别：全局变量包括外部变量和static变量 **?**   
 https://www.runoob.com/w3cnote/cpp-static-usage.html
+	
+2023/1/25 6-2-1
+1. passed by value & passed by ref/pointer  
+
+6-2-2
+const
+	
