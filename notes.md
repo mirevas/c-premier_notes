@@ -125,3 +125,41 @@ https://www.runoob.com/w3cnote/cpp-static-usage.html
 6-2-2
 const
 	
+2023/1/30 6-2-3
+1. initializer_list：可以传可变参数，需要先调包
+思考：与vector有什么区别
+	
+6-3
+1. 函数不要return a **reference or pointer** to a local object，有概率会返回垃圾值
+	
+6-4
+overload重载：
+```cpp
+// high-level const 可以省略，eg.
+Record lookup(Phone);
+Record lookup(const Phone);	// 报错
+Record lookup(Phone*);
+Record lookup(Phone* const);	// 报错
+// low-level const 不能省略，相当于不同类型变量
+Record lookup(Phone*);
+Record lookup(const Phone*);	// 重载函数
+Record lookup(Phone&);
+Record lookup(const Phone&);	// 重载函数
+	
+```
+
+6-5
+1. default argument
+从左到右匹配，不允许func(,,10);
+2. inline: a request to the compiler, 避免function call overhead，增加运行速度。  
+ps. 迭代，含有static变量的函数compiler通常不会inline。 
+3. constexpr()：not required to return a constant expression
+```cpp
+constexpr int add(int cnt) {return 5 + cnt};
+int arr[add(2)];
+```
+条件:  
+1. return 类型和所有参数类型都必须是literal type.   
+2. 必须只包括一个return statement  
+为什么不能用一个变量代替？  
+优点：在编译时就提前执行
