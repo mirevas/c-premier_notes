@@ -163,3 +163,10 @@ int arr[add(2)];
 2. 必须只包括一个return statement  
 为什么不能用一个变量代替？  
 优点：在编译时就提前执行
+	
+2023/2/1 6-6  
+1.debug: assert(expre); 加上 NDEBUG( #define NDBUG) 会使assert失效  
+2. func match : exact match > conversion match    
+
+6-7
+1. pointers to functions
