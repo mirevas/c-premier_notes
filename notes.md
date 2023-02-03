@@ -170,3 +170,28 @@ int arr[add(2)];
 
 6-7
 1. pointers to functions
+
+2023/2/2 7-1  
+```cpp
+class A {
+public:
+	int a_;	 // 类的成员变量后面通常加一个下划线(规范)
+	
+	// constructor 构造函数
+	A (int value) : a_(value) {}	
+	
+	void func() const {	// 加const: 对象的所有成员变量均不可更改
+//		a_ = 20;  not allowed
+		cout << a_ << endl;
+	}
+};
+
+int main()
+{
+	A a(10); 	// 写法1
+	A a1 = A(100);	//写法2，常规写法
+	A a2 = 30;	//写法3
+    return 0;
+}	
+	
+```
