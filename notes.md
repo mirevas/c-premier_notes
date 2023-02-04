@@ -195,3 +195,9 @@ int main()
 }	
 	
 ```
+2023/2/3 7-2  
+1. public, private, protected
+2. friend: allow another class or function to access its nonpublic members  
+
+7-3-1  
+1. mutable  
