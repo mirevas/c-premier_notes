@@ -201,3 +201,40 @@ int main()
 
 7-3-1  
 1. mutable  
+
+2023/2/6 7-3-2  
+```cpp
+
+class Aurora {
+ private:
+    int a_;
+ public:
+    Aurora(int a) : a_(a){}
+    
+    
+    Aurora& display() {
+         cout << "in non-const func" << endl;
+         return *this;
+    }
+    
+    // 如果返回的是*this，因为其指向对象的值不变（第二个const），所以第一个const不能省略 **？**
+    const Aurora& display() const {
+        cout << "in const func" << endl;
+        return *this;
+    }
+};
+
+
+int main()
+{
+    // 优先匹配最符合条件的function 
+    Aurora aurora(10);
+    aurora.display();	// in non-const func
+    
+    const Aurora aurora1(20);
+    aurora1.display();	// in const func
+
+    return 0;
+}
+	
+```
